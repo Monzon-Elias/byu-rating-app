@@ -11,7 +11,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #002d5f;
-  border-bottom: 2px solid black;
+  box-shadow: 2px 3px 3px black;
 }
 
 header h1, .text h2 { margin: 0; }
