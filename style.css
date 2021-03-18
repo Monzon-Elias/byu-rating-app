@@ -8,11 +8,10 @@ header {
   text-align: center;
   color: rgb(255, 255, 255);
   position: fixed;
-  z-index: 1;
   top: 0;
   width: 100%;
   background-color: #002d5f;
-  box-shadow: 2px 3px 3px black;
+  border-bottom: 2px solid black;
 }
 
 header h1, .text h2 { margin: 0; }
