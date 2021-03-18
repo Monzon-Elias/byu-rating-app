@@ -1,9 +1,7 @@
 function convertToJson(res) {
   if (res.ok) {
-    document.getElementById("noItem").innerHTML = "";
     return res.json(); //json() is a method inside the response object. It returns the data as a json object.
   } else {
-    document.getElementById("noItem").innerHTML = "No item today X(";
     throw new Error(res.statusText);
   }
 }
@@ -55,6 +53,7 @@ function displayItem(item) {
     <div class="buttons">
       <button id="no" class="bi">No</button>  
       <button id="yes" class="bi">Yes</button>
+      <button id="next" class="bi bi-arrow-right"></button>
     </div> 
     <span id="thanks"></span> 
   </div>
@@ -77,4 +76,5 @@ function displayItem(item) {
       thankYouAndCheckMarck("no", "yes");
     });
   });
+  document.getElementById('next').onclick = getItem;
 }
