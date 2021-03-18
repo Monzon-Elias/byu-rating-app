@@ -15,7 +15,7 @@ async function postRatings(url = "", data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-export async function getItem() {
+async function getItem() {
   const url = "https://api.lib.byu.edu/leaflet/item";
   let item = await fetch(url).then(convertToJson);
   console.log(item);
